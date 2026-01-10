@@ -3,7 +3,7 @@ print_colored_info() {
 	DEFAULT_BG1=6
 	DEFAULT_FG1=1
 	DEFAULT_BG2=2
-	DEFAULT_FG2=
+	DEFAULT_FG2=4
 	source ./config.cfg 2>/dev/null
 	bg_title=${column1_background:-$DEFAULT_BG1}
 	fg_title=${column1_font_color:-$DEFAULT_FG1}
