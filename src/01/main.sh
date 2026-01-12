@@ -5,7 +5,7 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-if [[ $1 =~ ^[0-9]+$ ]]; then
+if [[ $1 =~ [0-9] ]]; then
   echo "Некорректный ввод"
   exit 1
 fi
