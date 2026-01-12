@@ -1,5 +1,4 @@
 #!/bin/bash
-get_system_info() {
 	HOSTNAME=$(hostname)
 	TIMEZONE="$(timedatectl | grep "Time zone" | awk '{print $3, "UTC", $5}')"
 	USER=$(whoami)
@@ -16,5 +15,4 @@ get_system_info() {
 	SPACE_ROOT=$(df -m / | awk 'NR==2{printf "%.2f", $2}')
 	SPACE_ROOT_USED=$(df -m / | awk 'NR==2{printf "%.2f", $3}')
 	SPACE_ROOT_FREE=$(df -m / | awk 'NR==2{printf "%.2f", $4}')
-}
 
