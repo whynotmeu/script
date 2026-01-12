@@ -1,7 +1,13 @@
 #!/bin/bash
-source ./validate.sh
-source ./output.sh
-check_param_exists "$1"
-check_not_number "$1"
-print_param "$1"
 
+if [ $# -ne 1 ]; then
+  echo "Ошибка: нужно передать один параметр"
+  exit 1
+fi
+
+if [[ $1 =~ ^[0-9]+$ ]]; then
+  echo "Некорректный ввод"
+  exit 1
+fi
+
+echo "Вы ввели: $1"
