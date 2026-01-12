@@ -32,10 +32,21 @@ SPACE_ROOT_USED=$(df -m / | awk 'NR==2{printf "%.2f", $3}')
 SPACE_ROOT_FREE=$(df -m / | awk 'NR==2{printf "%.2f", $4}')
 
 echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mHOSTNAME\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$HOSTNAME\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mTIMEZONE\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$TIMEZONE\e[0m"
 echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mUSER\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$USER\e[0m"
 echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mOS\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$OS\e[0m"
 echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mDATE\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$DATE\e[0m"
 echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mUPTIME\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$UPTIME\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mUPTIME_SEC\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$UPTIME_SEC\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mIP\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$IP\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mMASK\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$MASK\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mGATEWAY\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$GATEWAY\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mRAM_TOTAL\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$RAM_TOTAL\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mRAM_USED\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$RAM_USED\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mRAM_FREE\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$RAM_FREE\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mSPACE_ROOT\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$SPACE_ROOT\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mSPACE_ROOT_USED\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$SPACE_ROOT_USED\e[0m"
+echo -e "\e[${BG[$COL1_BG-1]}m\e[${FG[$COL1_FG-1]}mSPACE_ROOT_FREE\e[0m = \e[${BG[$COL2_BG-1]}m\e[${FG[$COL2_FG-1]}m$SPACE_ROOT_FREE\e[0m"
 
 echo
 
